@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    background-color: green;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .menu-toggle {
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .menu-toggle span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin-bottom: 5px;
+  }
+  
+  .menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    position: fixed; /* Cambia a position: fixed para cubrir todo el alto de la pantalla */
+    background-color: red; /* Cambia el color de fondo a rojo */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 33.33%; /* Ocupa un tercio de la pantalla */
+    max-width: 300px;
+    border-radius: 4px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+   }
+  
+  .menu li {
+    padding: 10px 0;
+  }
+  
+  .menu li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    font-weight: bold; /* Agrega negrita */
+    font-size: 18px; /* Ajusta el tamaño de fuente */
+    text-transform: uppercase; /* Convierte el texto en mayúsculas */
+    transition: color 0.3s; /* Agrega una transición de color suave */
+  }
+  
+  .menu li a:hover {
+    color: yellow; /* Cambia el color al pasar el mouse */
+  }
+
+  .content {
+    padding: 20px;
+  }
+  
+  .menu.show {
+    display: block;
+  }
+  
