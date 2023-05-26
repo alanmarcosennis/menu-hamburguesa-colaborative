@@ -5,5 +5,13 @@ window.addEventListener('DOMContentLoaded', function() {
     menuToggle.addEventListener('click', function() {
       menu.classList.toggle('show');
     });
+      document.addEventListener('click', (event) => {
+        const targetElement = event.target;
+        const isMenuClicked = menu.contains(targetElement) || targetElement.classList.contains('menu-toggle');
+        
+        if (!isMenuClicked) {
+          menu.classList.remove('show');
+        }
+      });
   });
   
